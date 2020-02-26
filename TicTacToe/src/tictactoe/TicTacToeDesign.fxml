@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="474.0" prefWidth="467.0" styleClass="backgrounds" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.TicTacToeDesignController">
+   <children>
+      <GridPane layoutX="43.0" prefHeight="354.0" prefWidth="382.0" style="-fx-background-color: rgba(20, 29, 88, 0.5);" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="cellOne" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" pickOnBounds="false" prefHeight="98.0" prefWidth="108.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="cellImageOne" fitHeight="88.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="cellTwo" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" prefHeight="98.0" prefWidth="108.0" GridPane.columnIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="cellImageTwo" fitHeight="88.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="cellThree" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" prefHeight="98.0" prefWidth="108.0" GridPane.columnIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="cellImageThree" fitHeight="88.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="cellFour" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" prefHeight="98.0" prefWidth="108.0" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="cellImageFour" fitHeight="88.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="cellFive" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" prefHeight="98.0" prefWidth="108.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="cellImageFive" fitHeight="88.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="cellSix" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" prefHeight="98.0" prefWidth="108.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="cellImageSix" fitHeight="88.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="cellSeven" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" prefHeight="98.0" prefWidth="108.0" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="cellImageSeven" fitHeight="88.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="cellEight" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" prefHeight="98.0" prefWidth="108.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="cellImageEight" fitHeight="88.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="cellNine" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" prefHeight="98.0" prefWidth="108.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="cellImageNine" fitHeight="88.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </GridPane>
+      <Pane layoutY="386.0" prefHeight="88.0" prefWidth="467.0" style="-fx-background-color: rgba(41, 55, 90, 0.9);">
+         <children>
+            <ImageView fitHeight="65.0" fitWidth="75.0" layoutX="14.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/o.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="75.0" layoutX="388.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/x.png" />
+               </image>
+            </ImageView>
+            <Text fill="#e02424" layoutX="14.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player O">
+               <font>
+                  <Font name="Samsung Sans Regular" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="388.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player X">
+               <font>
+                  <Font name="Samsung Sans Regular" size="18.0" />
+               </font>
+            </Text>
+            <HBox layoutX="205.0" layoutY="12.0" prefHeight="44.0" prefWidth="57.0" spacing="10.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                     <font>
+                        <Font name="A750-Sans-Cd-Light-Regular" size="40.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#babedd" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                     <font>
+                        <Font name="Montserrat Regular" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                     <font>
+                        <Font name="A750-Sans-Cd-Light-Regular" size="40.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <FontAwesomeIconView fx:id="currentPlayer" fill="#7482e0" glyphName="CIRCLE" layoutX="61.0" layoutY="18.0" visible="false" />
+            <JFXButton buttonType="RAISED" layoutX="198.0" layoutY="52.0" onAction="#clearBoard" prefHeight="28.0" prefWidth="68.0" style="-fx-background-color: rgba(20, 29, 88, 0.5);" text="Reset" textFill="WHITE">
+               <font>
+                  <Font name="Samsung Sans Regular" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <StackPane fx:id="choosePlayer" prefHeight="474.0" prefWidth="467.0" style="-fx-background-color: rgba(0,0,0,.7);">
+         <children>
+            <Pane maxHeight="163.0" prefHeight="163.0" prefWidth="467.0" style="-fx-background-color: rgb(20, 29, 88);">
+               <children>
+                  <Text fill="WHITE" layoutX="8.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose first player">
+                     <font>
+                        <Font name="Samsung Sans Regular" size="19.0" />
+                     </font>
+                  </Text>
+                  <Pane layoutX="-1.0" layoutY="10.0" prefHeight="23.0" prefWidth="3.0" style="-fx-background-color: #fff" />
+                  <JFXButton fx:id="playerO" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" layoutX="14.0" layoutY="43.0" onAction="#checkFirstPlayer" prefHeight="98.0" prefWidth="108.0" style="-fx-background-color: rgba(255,255,255,.2); -fx-background-radius: 20;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/o.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="playerX" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" layoutX="345.0" layoutY="43.0" onAction="#checkFirstPlayer" prefHeight="98.0" prefWidth="108.0" style="-fx-background-color: rgba(255,255,255,.2); -fx-background-radius: 20;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="65.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/x.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
